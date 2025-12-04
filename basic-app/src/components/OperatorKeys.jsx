@@ -2,7 +2,12 @@ import React from "react";
 
 function PrimaryOperatorKeys(){
     const operators = {divide: '/', multiple: 'x', minus: '-', plus: '+', equals:'=' }
-
+    /*
+    const operators = {divide: {title: 'divide', key:'/', funct: (function divide(a,b){ return a/b})}
+                        ,multiply:{}
+                        ,minus:{}
+                    }
+    */
     return (
         <div className="primaryOpsArea">
             {operators.map(([key,operator]) => (
